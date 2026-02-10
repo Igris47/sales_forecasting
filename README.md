@@ -1,20 +1,54 @@
-# sales_forecasting
-Sales forecasting using multiple models - Seasonal Naïve, Holt-Winters, ARIMA, SARIMA and Linear Regression Model
+# Sales Forecasting
+
+Sales forecasting using multiple models: Seasonal Naïve, Holt-Winters, ARIMA, SARIMA, and Linear Regression.
+
+---
 
 ## Project Objective
-Goal: The goal of this project was to apply various quantitative methods, (i.e. Times Series Models and Causal Models) to forecast the sales of the products available in the dataset.
+The goal of this project is to apply quantitative forecasting techniques (time series + causal models) to predict sales for products in the dataset.
 
-- Perform time series analysis to understand the data and trends
-- Use multiple forecasting models on train dataset
-- Finally select the best model to run the test data
+---
 
-Models covered in the notebook include:
-1. Seasonal Naive Model
-2. Holt-Winters Model (Triple Exponential Smoothing)
-3. ARIMA Model and Seasonal ARIMA Models
-4. Linear Regression Model
+## Key Steps
+- Performed time series analysis to understand seasonality, trend, and patterns
+- Split data into train and test datasets
+- Built multiple forecasting models on training data
+- Selected the best model based on evaluation results
+- Generated forecasts on test data using the final selected model
+
+---
+
+## Models Implemented
+- Seasonal Naïve Model  
+- Holt-Winters Model (Triple Exponential Smoothing)  
+- ARIMA Model  
+- SARIMA Model  
+- Linear Regression Model  
+
+---
 
 ## Conclusion
-We considered different time-series models as well as a regression model for time series forecasting. From our results we saw that the linear regression model outperformed the other time-series models. Therefore, for this dataset we could use a regression model, rather than a time-series model to forecast sales. One of the main assumptions of regression models is that the patterns in the historical data will be repeated in the future, and since our data was highly seasonal and had a linear trend, it made sense why the linear regression model out-performed the other models.
+Multiple time series models and a regression model were evaluated.  
+From the results, the **Linear Regression model outperformed the time-series models**.
+
+This makes sense because the dataset showed:
+- strong seasonality  
+- a clear linear trend  
+
+Regression models assume historical patterns repeat in the future, which matched this dataset well.
+
+---
+
+## Tech Stack
+- Python  
+- Pandas, NumPy  
+- Statsmodels  
+- Matplotlib  
+
+---
+
+## Repository Structure
+- `sales_forecasting.ipynb` – Main notebook
+- `README.md` – Project documentation
 
 [README.md](https://github.com/user-attachments/files/20532150/README.md)
